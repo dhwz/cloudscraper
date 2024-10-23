@@ -374,7 +374,7 @@ class CloudScraper(Session):
 
         return (
             {
-                'cf_clearance': scraper.cookies.get('cf_clearance', '', domain=cookie_domain)
+                '__cf_bm': scraper.cookies.get('__cf_bm', '', domain=cookie_domain)
             },
             scraper.headers['User-Agent']
         )
